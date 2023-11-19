@@ -13,6 +13,8 @@ public class StringCalisma {
         yazi.concat(" sonuna birleştirilecek metin");
         yazi.contains("nasılsın");
         yazi.endsWith("sın");
+
+
         yazi.startsWith("sel");
         yazi.indexOf("lam");
         yazi.isEmpty();
