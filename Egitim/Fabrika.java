@@ -4,7 +4,7 @@ public class Fabrika {
     public static void main(String[] args) {
        Araba bmw =new Araba();
 
-        bmw.setModel("320İ");
+
         bmw.setMarka("BMW");
         bmw.setKapisayisi(4);
         bmw.setKilometre(11930);
@@ -12,7 +12,7 @@ public class Fabrika {
 
         Araba audi=new Araba();
 
-        System.out.println(bmw.getKapisayisi()+" "+ bmw.getKilometre()+" "+ bmw.getModel()+" "+ bmw.getUretimyili()+" "+bmw.getMarka());
+        //System.out.println(bmw.getKapisayisi()+" "+ bmw.getKilometre()+" "+ bmw.getModel()+" "+ bmw.getUretimyili()+" "+bmw.getMarka());
     
 
         Araba tofas =new Araba("Tofaş","Şahin","2000",4,345700);

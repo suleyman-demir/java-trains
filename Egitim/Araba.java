@@ -2,37 +2,41 @@ package Egitim;
 
 public class Araba {
 
-
-    public Araba (String marka,String model){
-        this(marka,model,null,0,null);
-    }
-
-
-
-    public Araba(){
-        System.out.println("default constructor calısdı");
-    }
-    public Araba(String marka,String model,String uretimyili,int kapisayisi,Integer kilometre){
-      this.marka=marka;
-      this.kapisayisi=kapisayisi;
-      this.kilometre=kilometre;
-      this.model=model;
-      this.uretimyili=uretimyili;
-    }
-
     private String model;
     private Integer kilometre;
     private int kapisayisi;
     private String uretimyili;
-
     private String marka;
+
+    public Araba(String marka, String model) {
+        this(marka, model, null, 0, null);
+    }
+
+
+    public Araba() {
+        System.out.println("default constructor calısdı");
+        marka = "default";
+    }
+
+    public Araba(String marka, String model, String uretimyili, int kapisayisi, Integer kilometre) {
+        this.marka = marka;
+        this.kapisayisi = kapisayisi;
+        this.kilometre = kilometre;
+        this.model = model;
+        this.uretimyili = uretimyili;
+    }
+
+    private Araba(String model){
+        this.model=model;
+    }
+
 
     public String getMarka() {
         return marka;
     }
 
     public void setMarka(String marka) {
-        if (marka.trim().length()< 1) {
+        if (marka.trim().length() < 1) {
             return;
         }
 
@@ -43,11 +47,11 @@ public class Araba {
         return model;
     }
 
-    public void setModel(String model) {
+    private void setModel(String model) {
         this.model = model;
     }
 
-    public Integer getKilometre() {
+    private Integer getKilometre() {
         return kilometre;
     }
 
@@ -60,6 +64,7 @@ public class Araba {
     }
 
     public void setKapisayisi(int kapisayisi) {
+        if (kapisayisi < 1) return;
         this.kapisayisi = kapisayisi;
     }
 
