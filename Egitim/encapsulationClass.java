@@ -22,4 +22,5 @@ public class encapsulationClass {
         return soyad;
     }
 
+
 }

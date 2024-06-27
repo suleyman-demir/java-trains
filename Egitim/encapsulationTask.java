@@ -13,5 +13,7 @@ public class encapsulationTask {
         soyad = soyad.toUpperCase();
         encapsulationClass ogrenci=new encapsulationClass(ad,soyad);
         System.out.println(ogrenci.getAd()+" "+ogrenci.getSoyad());
+
+
     }
 }
